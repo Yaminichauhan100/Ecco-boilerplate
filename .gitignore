@@ -1,7 +1,6 @@
 .env.development
 .env.test
-.env
-node_modules/
+
 
 
 # compiled output
