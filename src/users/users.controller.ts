@@ -6,6 +6,7 @@ import { AuthGuard } from '../guards/auth.guard';
 
 @Controller('users')
 export class UsersController {
+  static userList: any;
   constructor(private userservice: UsersService) {}
 
   @Get()
@@ -18,8 +19,8 @@ export class UsersController {
   addData(): string {
     return 'Data added';
   }
-  @Get('user-list')
-  userList() {
+  @Get()
+  userList():any  {
     return this.userservice.findData();
   }
   @Post('user-add')
