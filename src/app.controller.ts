@@ -7,9 +7,6 @@ export class AppController {
 
   @Get()
   getHello(): string {
-    // if (1 > 0) {
-    //   return 
-    // }
     return this.appService.getHello();
   }
 }
