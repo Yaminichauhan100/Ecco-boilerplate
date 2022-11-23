@@ -30,8 +30,8 @@ describe('UsersController', () => {
     });
   });
   describe('userAdd', () => {
-    it('should create  the user  ', async () => {
-      const result = [];
+    it('should not create  the user  ', async () => {
+      const result = ["a"];
       jest.spyOn(userService, 'create').mockImplementation(() => result);
       expect(await userController.userAdd(result)).toBe(result);
     });
